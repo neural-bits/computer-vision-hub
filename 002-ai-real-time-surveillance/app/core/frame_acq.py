@@ -38,4 +38,4 @@ class FrameAcquisition:
                     # 1 frame is available now in the buffer, we release the sem so the consumer can consume it
                     self.shared_buffer.frame_available.release()
 
-                    time.sleep(1 / 30)
+                    time.sleep(0.01)
